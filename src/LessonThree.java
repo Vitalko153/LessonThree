@@ -14,6 +14,7 @@ public class LessonThree {
 
         System.out.println(map);
 
+
         //Телефонная книга.
 
         PhoneBook phoneBook = new PhoneBook();
@@ -24,8 +25,13 @@ public class LessonThree {
         phoneBook.add("Петров", "9453457");
         phoneBook.add("Грибоедов", "7562687");
         phoneBook.add("Лермонтов", "3785788");
+        phoneBook.add("Грибоедов", "3785788");
+        phoneBook.add("Петров", "3785788");
+
+
 
         System.out.println(PhoneBook.get("Петров"));
         System.out.println(PhoneBook.get("Грибоедов"));
+        System.out.println(PhoneBook.get("Лермонтов"));
     }
 }
