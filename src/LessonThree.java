@@ -11,7 +11,6 @@ public class LessonThree {
         for(String s : wordsArray){
             map.put(s, map.getOrDefault(s, 0) + 1);
         }
-
         System.out.println(map);
 
         //Телефонная книга.
