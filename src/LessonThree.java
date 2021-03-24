@@ -14,7 +14,6 @@ public class LessonThree {
 
         System.out.println(map);
 
-
         //Телефонная книга.
 
         PhoneBook phoneBook = new PhoneBook();
