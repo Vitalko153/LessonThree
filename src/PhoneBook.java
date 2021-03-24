@@ -1,17 +1,18 @@
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class PhoneBook {
 
-    static Map<String, String> mapPhoneBook = new TreeMap<>();
+    static Map<String, Set<String>> mapPhoneBook = new TreeMap<>();
 
     public static void add(String name, String phone){
-        mapPhoneBook.put(name, phone);
+        Set<String> call = mapPhoneBook.getOrDefault(name, new TreeSet<>());
+        call.add(phone);
+        mapPhoneBook.put(name, call);
     }
 
 
     public static String get(String name){
-        return (name);
+        return (name + " тел:" + mapPhoneBook.get(name));
     }
 
 }
